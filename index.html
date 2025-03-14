@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7efea5db52.js" crossorigin="anonymous"></script>
     <title>Tailwind css</title>
 </head>
 <body class="flexf flex-col min-h-screen text-grey-900">
@@ -80,8 +81,40 @@
         </form>
     </section>
 </main>
-<footer class="bg-gray-900 text-white text-center py-6">
-    <p>&copy; 2025 Tailwind css</p>
+<footer class="bg-gray-900 text-white text-center py-8">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-2 md:grid-cols-4 gap-8 ">
+        <!--about section-->
+        <div>
+            <h3 class="tex-lg font-semibold mb-2">About</h3>
+            <p class="text-gray-400">we are dedicated to providing top-notch services</p>
+        </div>
+        <!--Quick links-->
+        <div>
+            <h3 class="tex-lg font-semibold mb-2">Quick links</h3>
+            <ul class="space-y-2">
+                <li><a href="#hero" class="text-gray-400 hover:text-white transition">Home</a></li>
+                <li><a href="#About" class="text-gray-400 hover:text-white transition">About</a></li>
+                <li><a href="#Services" class="text-gray-400 hover:text-white transition">services</a></li>
+                <li><a href="#contact" class="text-gray-400 hover:text-white transition">contac</a></li>
+            </ul>
+        </div>
+        <!--Contact section-->
+        <div>
+            <h3 class="tex-lg font-semibold mb-2"> Contact</h3>
+            <p class="text-gray-400">Email: email@example.com</p>
+            <p class="text-gray-400">Phone: +254 792 387 244</p>
+        </div>
+        <div>
+            <!--Social icons-->
+            <h3 class="tex-lg font-semibold mb-2">Follow us</h3>
+            <div class="flex space-x-8 justify-center">
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
