@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind css</title>
+</head>
+<body class="flexf flex-col min-h-screen text-grey-900">
+    <!-- Navbar -->
+     <nav class="fixed top-0 w-full bg-gray-900 text-white flex justify-between items-center px-8 py-4 z-50">
+            <div class="text-xl font-bold">My brand</div>
+           <ul class="hidden md:flex space-x-6">
+            <li><a href="#hero" class=" cursor-pointer text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-red-500 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a></li>
+            <li><a href="#About" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-red-500 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">About</a></li>
+            <li><a href="#services" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-red-500 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Services</a></li>
+            <li><a href="#Contact" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-red-500 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Contact</a></li>
+           </ul>
+           <div class="md:hidden text-2xl cursor-pointer text white">&#9776;</div>
+     </nav>
+<!-- Hero -->
+ <header class="h-screen bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('assets/pexels-dax-dexter-delada-2150239947-31090348.jpg')">
+    <div class="bg-black bg-opacity-40 p-8 rounded-lg">
+        <h1 class="text-4xl font-bold">Welcome to my website</h1>
+        <p class="text-lg">you one stop solution for web Services</p>
+        <a href="#Contact" class="inline-block mt-5 bg-red-700 text-white px-10 py-2 rounded-lg hover:bg-red-500 transition">Get started</a>
+    </div>
+ </header>
+<!-- main section --> 
+<main >
+    <section>
+        <h2>About us</h2>
+        <p>We specialize in creating responsive websites that adapt to any screen size</p>
+    </section>
+    <section>
+       <h2>Our Services</h2>
+       <div class="grid grid-cols-1 grid-cols-3 gap-6 px-10 py-2 mb-6">
+       <div class="bg-pink-200 p-6 rounded-lg mg-6 hover:bg-pink-400 transition-transform cursor-pointer" >
+        <h3>Web design</h3>
+             <p>Modern and responsive web design for businesses</p>
+       </div>
+       <div class="bg-green-200 p-6 rounded-lg">
+         <h3>SEO Optmization</h3>
+            <p>Optimize your website to rank higher on search engines</p>
+         </div>
+        <div class="bg-red-200 p-6 rounded-lg " >
+                <h3>ecomerce</h3>
+                <p>we can create an online store for your business</p>
+        </div>
+    </div>  
+    </section>
+</main>
+
+</body>
+</html>
