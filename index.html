@@ -27,29 +27,61 @@
     </div>
  </header>
 <!-- main section --> 
-<main >
-    <section>
-        <h2>About us</h2>
-        <p>We specialize in creating responsive websites that adapt to any screen size</p>
+<main class="px-6 py-10 text-center">
+    <section id="about" class="mb-10 cursor-pointer">
+        <h2 class="text-4xl font-bold">About us</h2>
+        <p class="text-gray-700">We specialize in creating responsive websites that adapt to any screen size</p>
     </section>
-    <section>
-       <h2>Our Services</h2>
-       <div class="grid grid-cols-1 grid-cols-3 gap-6 px-10 py-2 mb-6">
-       <div class="bg-pink-200 p-6 rounded-lg mg-6 hover:bg-pink-400 transition-transform cursor-pointer" >
-        <h3>Web design</h3>
-             <p>Modern and responsive web design for businesses</p>
+    <section id="services" class="mb-10">
+       <h2 class="text-3xl font-bold">Our Services</h2>
+     <div class="grid grid-cols-1 grid-cols-3 gap-6 mb-6 flex justify-center">
+       <div class="mt-6 flex justify-center gap-6 cursor-pointer" >
+        <div class="relative w-full md:w-1/3 h-64 rounded-lg overflow-hidden shadow-lg group flex flex-col justify-center items-center">
+            <img src="assets/pexels-can-ceylan-2148269005-31116877.jpg" alt="web design" class=" absolute inset-0 
+            w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 " >
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white transform scale-0 group-hover:scale-100 transition-transform duration-500 z-10">
+                <h3 class="text-xl font-semibold ">Web design</h3>
+                <p class="mt-2 text-center px-4 ">Modern and responsive web design for businesses</p>
+            </div>
+            </div>
        </div>
-       <div class="bg-green-200 p-6 rounded-lg">
-         <h3>SEO Optmization</h3>
-            <p>Optimize your website to rank higher on search engines</p>
-         </div>
-        <div class="bg-red-200 p-6 rounded-lg " >
-                <h3>ecomerce</h3>
-                <p>we can create an online store for your business</p>
-        </div>
+       <div class="mt-6 flex justify-center gap-6 cursor-pointer" >
+        <div class="relative w-full md:w-1/3 h-64 rounded-lg overflow-hidden shadow-lg group ">
+            <img src="assets/pexels-can-ceylan-2148269005-31116877.jpg" alt="web design" class=" absolute inset-0 
+            w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 width-100 height-auto">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white transform scale-0 group-hover:scale-100 transition-transform duration-500 z-10">
+                    <h3 class="text-xl font-semibold ">Seo Optimisation</h3>
+                        <p class="mt-2 text-center px-4 ">Optimise your website to rank higher on search engines</p>
+                        </div>
+     </div>
+       </div>
+       <div class="mt-6 flex justify-center gap-6 cursor-pointer" >
+        <div class="relative w-full md:w-1/3 h-64 rounded-lg overflow-hidden shadow-lg group ">
+            <img src="assets/pexels-pixabay-38519.jpg" alt="web design" class=" absolute inset-0 
+            w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white transform scale-0 group-hover:scale-100 transition-transform duration-500 z-10">
+                <h3 class="text-xl font-semibold ">E-commerce </h3>
+                <p class="mt-2 text-center px-4 ">We can create a store for your businesses</p>
+            </div>
+            </div>
+       </div>
     </div>  
     </section>
+    <section id="Contact" class="mb-10">
+        <h2 class="text-3xl font-bold">Contact us</h2>
+        <form action="" class="mt-6 flex flex-col items-center">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name" class="w-full md:w-1/3 p-2 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500" required>
+           <label for="email">Email:</label>
+            <input type="email" placeholder="Email" class="w-full md:w-1/3 p-2 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 mt-4" required>
+            <label for="message">Mesage:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="w-full md:w-1/3 p-2 rounded-lg border border-gray-300 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 mt-4"></textarea>
+            <button class="bg-red-700 text-white px-10 py-2 rounded-lg mt-4 hover:bg-red-500 transition">Send</button>
+        </form>
+    </section>
 </main>
-
+<footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Tailwind css</p>
+</footer>
 </body>
 </html>
